@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:alpha="0.8"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/backImgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"/>
+
+
+        <TextView
+            android:id="@+id/registerTextb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textColor="#00868B"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/phone_num_Edtb"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#6524"
+            android:hint="手机号"
+            android:inputType="number"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/pswd_Edtb"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#345"
+            android:hint="6-10位密码"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/confirm_pswd_Edtb"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#025"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/verify_Edtb"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#6895"
+                android:hint="验证码"
+                android:inputType="number"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+
+            <Button
+                android:id="@+id/verify_Btnb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:text="验证码"
+                android:textColor="#00868B" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reg_Btnb"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#8741"
+            android:text="注册"
+            android:textSize="20dp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>
